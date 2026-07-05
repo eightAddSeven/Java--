@@ -1,0 +1,88 @@
+/* 1. 基础根背景 */
+.root {
+    -fx-base: #1e1e1e;
+    -fx-background-color: #1e1e1e;
+}
+
+/* 2. 菜单栏美化 */
+.menu-bar {
+    -fx-background-color: #333333;
+    -fx-border-color: #252526;
+    -fx-border-width: 0 0 1 0; /* 只留底部细线 */
+}
+
+.menu-bar .label {
+    -fx-text-fill: #cccccc;
+    -fx-font-weight: bold;
+}
+
+/* 3. 侧边栏 TreeView 美化 */
+.tree-view {
+    -fx-background-color: #252526;
+    -fx-border-color: transparent;
+}
+
+.tree-cell {
+    -fx-background-color: #252526;
+    -fx-text-fill: #cccccc;
+}
+
+.tree-cell:selected {
+    -fx-background-color: #37373d; /* 选中时的深蓝色 */
+    -fx-text-fill: #ffffff;
+}
+
+/* 4. 分割条样式 */
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+    -fx-background-color: #333333;
+    -fx-border-color: transparent;
+}
+
+/* 5. 滚动条美化（让它变细、变暗） */
+.scroll-bar .thumb {
+    -fx-background-color: #424242;
+    -fx-background-insets: 2;
+    -fx-background-radius: 5;
+}
+
+/* 关键字颜色：采用 VS Code 经典的蓝色 */
+.keyword {
+    -fx-fill: #569cd6;
+    -fx-font-weight: bold;
+}
+
+/* 整个代码区域的背景和字体 */
+.code-area {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: 'Consolas', 'Courier New', monospace;
+    -fx-font-size: 14pt;
+}
+
+/* 行号的样式 */
+.lineno {
+    -fx-text-fill: #858585;
+}
+
+/* 代码编辑区的文字颜色 */
+.code-area .text {
+    -fx-fill: #d4d4d4; 
+}
+
+/* 关键字颜色（VS Code 蓝） */
+.keyword {
+    -fx-fill: #569cd6;
+    -fx-font-weight: bold;
+}
+
+/* 行号区域的样式 */
+.lineno {
+    -fx-background-color: #1e1e1e; /* 与编辑区背景一致 */
+    -fx-text-fill: #858585;         /* 经典的暗灰色数字 */
+    -fx-padding: 0 5 0 5;
+}
+
+/* 选中文字的背景色 */
+.styled-text-area .selection {
+    -fx-fill: #264f78; 
+}
